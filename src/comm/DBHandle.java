@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class DBHandle {
 	//声明私有静态常量：数据库连接位置、登录名、密码、驱动名
-	final private String URL="jdbc:mysql://localhost:3306/onlinestore?characterEncoding=utf-8";
+	final private String URL="jdbc:mysql://localhost:3306/graduation_onlinestore?characterEncoding=utf-8";
 	final private String LOGIN="root";
 	final private String PASSWORD="123456";
 	final private String DRIVERNAME="com.mysql.jdbc.Driver";
