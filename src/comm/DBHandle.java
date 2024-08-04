@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class DBHandle {
 	//声明私有静态常量：数据库连接位置、登录名、密码、驱动名
-	final private String URL="jdbc:mysql://localhost:3306/graduation_onlinestore?characterEncoding=utf-8";
+	final private String URL="jdbc:mysql://localhost:3306/graduation_37_onlinestore?characterEncoding=utf-8";
 	final private String LOGIN="root";
 	final private String PASSWORD="123456";
 	final private String DRIVERNAME="com.mysql.jdbc.Driver";
@@ -15,7 +15,7 @@ public class DBHandle {
 	private Connection conn;
 	private Statement st;
 	private ResultSet rs;
-	
+
 	//建立连接
 	/**
 	 * 数据库连接
@@ -30,7 +30,7 @@ public class DBHandle {
 			e.printStackTrace();
 		}
 	}
-	
+
 	//执行SQL insert/update/delete
 	/**
 	 * 数据库增加/删除/修改
@@ -56,9 +56,9 @@ public class DBHandle {
 		}
 		return ret;
 	}
-	
+
 	//执行查询	 select
-	
+
 	/**
 	 * 数据库查询
 	 * @param sql
@@ -80,7 +80,7 @@ public class DBHandle {
 		}
                 return rs;
 	}
-	
+
 	//关闭连接
 	/**
 	 * 数据库关闭
